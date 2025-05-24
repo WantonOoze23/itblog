@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    
+    <link rel="stylesheet" href="style/main_styles.css">
+    <link rel="stylesheet" href="style/navigation.css">
+</head>
+<body>
+    
+    <section class="navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+            <form id="searchForm" style="position:relative; display:inline-block; margin-left:20px;">
+                <input type="text" id="searchInput" placeholder="Пошук..." name="q" style="padding:4px;">
+                <div id="searchDropdown" class="search-dropdown"></div>
+            </form>
+            <ul class="nav-login-list">
+                <li class="nav-login-btn">
+                    <a href="/cabinet/login.php" class="btn-nav-login">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+    <section class="contacts" style="padding: 30px 0; text-align: center;">
+        <h2>Контакти</h2>
+        <p>Зв’яжіться з нами: <a href="mailto:info@itblog.com">info@itblog.com</a></p>
+        <p>Телефон: +38 (099) 123-45-67</p>
+        <p>Ми у соцмережах: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Telegram</a>
+        </p>
+        <div style="margin: 35px auto 0 auto; max-width: 520px; text-align: center;">
+            <h3 style="margin-bottom:10px;">Долучайтесь до нашої команди!</h3>
+            <p>
+                Якщо ви бажаєте стати частиною нашого проєкту, публікувати власні статті, ділитися досвідом або ідеями — ми завжди відкриті до співпраці.<br>
+                Запрошуємо авторів, експертів, ентузіастів та всіх, хто хоче розвивати IT-спільноту разом з нами.
+            </p>
+            <a href="/cabinet/login.php" class="btn-nav-login" style="font-size:1.08em;padding:8px 18px;display:inline-block;margin:18px 0 7px 0;">
+                Стати частиною проєкту / Зареєструватися
+            </a>
+            <div style="font-size:0.97em;color:#555;">
+                Зареєструйтесь, щоб отримати доступ до кабінету автора та можливість публікувати власні матеріали.
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2025 IT Blog. Всі права захищені.
+    </footer>
+    <script src="scripts/search.js"></script>
+</body>
+</html>

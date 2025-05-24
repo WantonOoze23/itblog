@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 80vh;
+    height: 100%;
+    background: linear-gradient(120deg, #f0f4f8 0%, #d9e7fa 100%);
+}
+section.login-form, section.register-form {
+    background: #fff;
+    max-width: 350px;
+    margin: 40px auto 0 auto;
+    padding: 30px 25px 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+    transition: box-shadow 0.2s;
+}
+section.login-form:hover, section.register-form:hover {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
+}
+h2 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #34495e;
+    font-size: 15px;
+}
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border 0.2s;
+}
+input[type="email"]:focus, input[type="password"], input[type="text"]:focus {
+    border: 1.5px solid #4a90e2;
+    outline: none;
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button[type="submit"]:hover {
+    background: #357ab8;
+}
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+p a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+p a:hover {
+    color: #357ab8;
+}
+.tab-btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    background: #e9eef5;
+    color: #2d3e50;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+}
+.tab-btn.active {
+    background: #fff;
+    color: #4a90e2;
+    border-bottom: 2px solid #4a90e2;
+    z-index: 2;
+}
+.tab-btn:not(.active):hover {
+    background: #d9e7fa;
+    color: #357ab8;
+}
+
+input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border 0.2s;
+    background: #fff;
+}
+input[type="number"]:focus, textarea:focus {
+    border: 1.5px solid #4a90e2;
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    section.login-form, section.register-form {
+        max-width: 95%;
+        padding: 18px 8px;
+    }
+}

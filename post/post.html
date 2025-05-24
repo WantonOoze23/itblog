@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квтолог</title>
+
+    <link rel="stylesheet" href="/style/main_styles.css">
+    <link rel="stylesheet" href="/style/navigation.css">
+</head>
+<body>
+    
+    <section class="navigation">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Головна</a></li>
+                <li><a href="/blog.html">Блог</a></li>
+                <li><a href="/contact.html">Контакти</a></li>
+            </ul>
+            <form id="searchForm" style="position:relative; display:inline-block; margin-left:20px;">
+                <input type="text" id="searchInput" placeholder="Пошук..." name="q" style="padding:4px;">
+                <div id="searchDropdown" class="search-dropdown"></div>
+            </form>
+            <ul class="nav-login-list">
+                <li class="nav-login-btn">
+                    <a href="/cabinet/login.php" class="btn-nav-login">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+    
+    <!-- section post -->
+    <section class="post">
+        <div class="post_loader">
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news_loader">
+            
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2025 IT Blog. Всі права захищені.
+    </footer>
+
+    <script src="/scripts/main_last_posts.js"></script>
+    <script src="../scripts/post.js"></script>
+</body>
+</html>

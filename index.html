@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+
+    <link rel="stylesheet" href="style/main_styles.css">
+    <link rel="stylesheet" href="style/navigation.css">
+</head>
+<body>
+    
+    <section class="navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+            <form id="searchForm" style="position:relative; display:inline-block; margin-left:20px;">
+                <input type="text" id="searchInput" placeholder="Пошук..." name="q" style="padding:4px;">
+                <div id="searchDropdown" class="search-dropdown"></div>
+            </form>
+            <ul class="nav-login-list">
+                <li class="nav-login-btn">
+                    <a href="/cabinet/login.php" class="btn-nav-login">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+    <!-- section about us -->
+    <section class="about_us" style="padding: 30px 0; text-align: center;">
+        <h1>Ласкаво просимо до IT Blog!</h1>
+        <p>
+            Тут ви знайдете найсвіжіші новини зі світу IT, цікаві статті, поради та багато іншого.<br>
+            Приєднуйтесь до нашої спільноти та залишайтеся в курсі останніх подій!
+        </p>
+        <p style="max-width:700px;margin:20px auto 0;">
+            IT Blog — це платформа для всіх, хто цікавиться сучасними технологіями, програмуванням, стартапами та цифровими інноваціями. 
+            Ми публікуємо аналітику, огляди нових продуктів, інтерв’ю з експертами та корисні гайди для початківців і досвідчених спеціалістів.
+        </p>
+        <p style="max-width:700px;margin:0 auto;">
+            Долучайтеся до обговорень у коментарях, діліться власними думками та досвідом. 
+            Якщо ви бажаєте стати автором — зв’яжіться з нами через розділ "Контакти". 
+            Разом ми створюємо простір для розвитку та обміну знаннями!
+        </p>
+    </section>
+
+    <!-- last news -->
+    <section class="news">
+        <div class="news_loader">
+            
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 IT Blog. Всі права захищені.
+    </footer>
+
+    <script src="scripts/main_last_posts.js"></script>
+    <script src="scripts/search.js"></script>
+</body>
+</html>
