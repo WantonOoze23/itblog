@@ -48,9 +48,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     <p><b>Стаж роботи:</b> ${getWorkExperienceText(user.work_experience)}</p>
                     <p><b>Опис:</b> ${user.description ? user.description : '—'}</p>
                     <div style="margin-top:15px;">
-                        <label style="margin-right:10px;">
+                        <label style="margin-right:10px; width: 100%;">
                             <input type="checkbox" id="make-admin-checkbox"> Зробити адміністратором
                         </label>
+                    </div>
+                    <div style="margin-right:10px; margin-top:15px; width: 100%;">
                         <button id="approve-user-btn" class="btn btn-primary">Додати до основної бази</button>
                         <button id="delete-user-btn" class="btn btn-danger">Видалити</button>
                     </div>
