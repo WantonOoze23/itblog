@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (imageFile) {
                 formData.append('image', imageFile);
             } else if (post && post.image) {
-                formData.append('image', post.image); // <-- Додаємо поточний шлях до зображення
+                formData.append('image', post.image);
             }
 
             fetch('/cabinet/api/add_new_edit_post.php', {

@@ -6,11 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 
-    // Функція для показу категорій у .content
+    // Функція для показу категорій 
     window.showCategories = async function () {
         const content = document.querySelector('.content');
         if (!content) return;
-        // ...весь код з loadCategories, але замість categoryBlock використовуйте content...
         const res = await fetch('/cabinet/api/get_all_categories.php');
         const data = await res.json();
         let html = `
@@ -43,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     body: 'category_id=' + encodeURIComponent(btn.dataset.id)
                 });
                 const data = await res.json();
-                document.getElementById('category-message').textContent = data.success ? 'Категорію видалено' : (data.message || 'Помилка');
+                document.getElementById('category-message').textContent = data.success ? 'Категорію видалено' : (data.message || 'Помилка при видаленні категорії');
                 window.showCategories();
             };
         });
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             const data = await res.json();
             const msg = document.getElementById('category-message');
-            msg.textContent = data.success ? 'Категорію додано' : (data.message || 'Помилка');
+            msg.textContent = data.success ? 'Категорію додано' : (data.message || 'Помилка при додаванні категорії');
             msg.style.color = data.success ? 'green' : 'red';
             if (data.success) {
                 document.getElementById('new-category-name').value = '';
